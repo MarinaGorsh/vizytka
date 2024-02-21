@@ -1,0 +1,358 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  background: -webkit-linear-gradient(270deg, rgb(217, 16, 203) 6%, rgb(139, 82, 255) 30%)  no-repeat;
+}
+.header, .footer {
+  background-color: rgba(40, 44, 52, 0.0);
+}
+.logo {
+  margin: 0;
+  margin-left: 43px;
+  color: aliceblue;
+  font-size: 60px;
+  font-family: fangsong;
+  text-decoration: none;
+  float: left;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn {
+  margin-top: 25px;
+  margin-right: 10px;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin-bottom: 17px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  transition: .3s;
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .btn {
+      width: 85px; 
+      letter-spacing: 1px;
+  }
+  .name{
+    width: 248px; 
+  }
+  .inf{
+    width: 300px;
+  }
+  .find input:focus {
+    width: 138px !important;
+  }
+  .imgu{
+    width: 130px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .cloud1{height: 245px !important;}
+  .star2{margin-left: 0px !important;}
+  .cloud2{position: relative !important;}
+  .btn{margin-bottom: 0px;}
+  .navbar-right{display: flex; flex-direction: column;}
+  .find{margin: 27px 0px 0px 46px;}
+  .logo{font-size: 40px;margin: 14px 0px 0px 29px;}
+  .aboutus{margin-top: -130px; width: 85% !important;}
+  .profile{margin-top: -130px;}
+  .aboutus h2{font-size: medium;}
+  .unicorn{width: 200px !important;}
+  .pu {font-size: 15px !important;}
+  .divu{display: flow-root !important;}
+  .imgu{width: 92px !important;}
+  .imgc{width: 70px !important;}
+  .pc {margin-left: 15px !important; font-size: 15px !important;}
+  .find input:focus {
+    width: 50px !important;
+  }
+}
+.btn a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover a {
+  color: #ffffff;
+}
+
+.btn:hover{
+  background: rgb(217, 16, 204);
+  box-shadow: 0 15px 20px rgba(140, 82, 255, 0.459);
+  transform: translateY(-7px);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn a:hover{
+  transform: translateY(-7px);
+  border-color: #ffffff;
+}
+.btncreate, .btnuser{
+  width: max-content;
+}
+.btncreate{
+  color: white;
+  display: flex;
+  margin-top: 60px;
+  font-size: 40px;
+  text-decoration: none;
+}
+.btnuser{
+  color: white;
+  display: flex;
+  margin-top: 30px;
+  font-size: 40px;
+  text-decoration: none;
+}
+.btncreate img{
+  height: 100px;
+  margin-top: -20px;
+}
+.btnuser img{
+  height: 77px;
+  margin-top: -6px;
+  margin-left: 13px;
+  padding-right: 12px;
+}
+.btnshare img{
+  height: 30px;
+}
+.cloud1{
+  height: 335px;
+  float: right;
+  margin-right: 27px;
+  z-index: -1;
+  position: relative;
+}
+.cloud2{
+  position: absolute;
+  margin-left: 417px;
+  z-index: -1;
+  margin-top: -47px;
+}
+.btnsee{
+  color: white;
+  display: flex;
+  font-size: 40px;
+  text-decoration: none;
+}
+.editbtn{
+  color: white;
+  display: flex;
+  font-size: 20px;
+  margin-right: -129px;
+  float: right;
+  text-decoration: none;
+}
+.btnshare{
+  color: white;
+  display: flex;
+  font-size: 20px;
+  margin-right: -165px;
+  float: right;
+}
+.edit{
+  margin-left: 44px;
+  margin-top: -34px;
+  z-index: 2;
+  position: relative;
+}
+.right{
+  float: right;
+}
+.star1, .star2, .star3{
+  height: 76px;
+  position: absolute;
+}
+.star4, .star5{
+  height: 56px;
+  position: absolute;
+}
+.star1{
+  margin: 36px 0px 0px 24px;
+}
+.star2{
+  margin-left: 535px;
+  margin-top: 136px;
+}
+.star3{
+  margin: 150px 0px 0px 237px;
+}
+.star4{
+  margin: 21px 0px 0px 88px;
+}
+
+.btns {
+  background-color: rgb(139, 82, 255);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: larger;
+  letter-spacing: 5px;
+}
+.btnl{
+  background-color: rgb(139, 82, 255);
+  color: white;
+  padding: 7px 16px;
+  margin: 9px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btns a{
+  text-decoration: none;
+  color: white;
+}
+.resume{
+  background-color: white;
+  width: 70%;
+  border-radius: 31px;
+  padding: 20px;
+  position: relative;
+  left: 13%;
+  z-index: 10;
+}
+.profile img{
+  filter: invert(1);
+  width: 149px;
+}
+.resume img {
+  float: right;
+  width: 163px;
+  margin-top: -118px;
+  margin-right: 14px;
+}
+.cont{
+  float: right;
+  height: 330px;
+  border-left: 1px solid black;
+  padding-left: 20px;
+}
+.inf {
+  padding-right: 179px;
+}
+.profile{
+  background-color: white;
+  width: 70%;
+  border-radius: 31px;
+  padding: 20px;
+  position: relative;
+  left: 13%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.forgot{
+  color: gray;
+  float: right;
+  font-size: small;
+}
+.imgc{
+  width: 120px;
+  filter: none !important;
+}
+.divc{
+  display: flex;
+  align-items: center;
+  margin: 40px 0px 40px 0px;
+}
+.pc{
+  margin-left: 40px;
+  font-size: 18px;
+}
+.imgu{
+  width: 200px;
+}
+.pu{
+  margin-left: 14px;
+  font-size: 20px; 
+}
+.divu{
+  display: flex;
+  align-items: center;
+  margin: 30px 0px 30px 0px;
+}
+.aboutus{
+  background-color: white;
+  width: 90%;
+  border-radius: 31px;
+  padding: 20px;
+  position: relative;
+  left: 2%;
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.find {
+  position: fixed;
+
+  margin: 27px 0px 0px -15px;}
+.find input {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.find input:focus {
+  width: 270px;
+  z-index: 1;
+  border-bottom: 2px solid #ffffff;
+}
+.find button {
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.find button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+.find button img{
+  width: 31px;
+  margin-top: -17px;
+}
+.find input::placeholder {
+  color: #ffffff;
+  font-weight: bold;
+}
+.aboutus .unicorn{
+  width: 397px;
+  border-radius: 93px;
+}
