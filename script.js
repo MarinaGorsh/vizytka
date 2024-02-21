@@ -18,7 +18,7 @@ var aboutBtn = document.getElementById('about-btn');
 var contactsBtn = document.getElementById('contacts-btn');
 
 mainBtn.addEventListener('click', function() {
-    window.location.href = 'http://localhost:8000/';
+    window.location.href = 'https://marinagorsh.github.io/vizytka/';
 });
 aboutBtn.addEventListener('click', function() {
     loadPage('about.html');
